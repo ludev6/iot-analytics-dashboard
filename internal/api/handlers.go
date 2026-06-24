@@ -39,7 +39,7 @@ func (h *Handler) GetAggregations(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	if err := json.NewEncoder(w).Encode(aggregations); err != nil {
+	if err := json.NewEncoder(w).Encode(filtered); err != nil {
 		log.Printf("Error encoding response: %v\n", err)
 		http.Error(w, "Internal server error", http.StatusInternalServerError)
 		return
