@@ -16,7 +16,7 @@ jobs:
       pull-requests: write
     steps:
       - name: PR Agent action step
-        uses: the-pr-agent/pr-agent@main
+        uses: The-PR-Agent/pr-agent@v0.37.0
         env:
           OPENROUTER__KEY: ${{ secrets.OPENROUTER_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
