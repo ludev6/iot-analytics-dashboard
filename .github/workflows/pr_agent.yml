@@ -22,3 +22,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG__MODEL: "openrouter/deepseek/deepseek-chat"
           CONFIG__FALLBACK_MODELS: '["openrouter/anthropic/claude-3-haiku"]'
+          CONFIG__CUSTOM_MODEL_MAX_TOKENS: "16000"
